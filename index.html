@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>JS Soccer game</title>
+
+  <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+  <div id="container">
+    <h1>Soccer game</h1>
+
+    <span>Goals : </span> <span id="score">0</span>
+    <span>Tirs restants : </span> <span id="remaining-shoots">5</span>
+    <p>Choose a number between 1 and 9.</p>
+
+    <div id="result"></div>
+    <div id="userInput">
+      <input id="input" type="number" name="input" min="1" max="9" required><br />
+      <div id="input-errors"></div>
+      <button id="shoot" type="button" onclick="shoot()">?</button><br />
+    </div>
+    <button id="playAgain_btn" type="button" onclick="playAgain()">&#x21BB;</button>
+  </div>
+
+</body>
+<script src="soccer.js"></script>
+
+</html>
